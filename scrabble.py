@@ -96,5 +96,11 @@ while True:
     lets = input()
     if(lets[0:5]=="bingo"): #check all combinations for bingo
         print(bingoCheck(lets[6:], words))
+    elif(lets[0:5]=="stack"):
+        wordStack = lets.split(' ')
+        if(len(wordStack)==2):
+            print(stackCheck(words, int(wordStack[1])))
+        else:
+            print(stackCompare(wordStack[1], wordStack[2], words))
     else: #check if in dictionary
         print(isWord(lets, words))
