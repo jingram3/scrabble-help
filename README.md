@@ -21,3 +21,9 @@ Otherwise, just type a word to see if it's in the scrabble dictionary.
 
 'hello'
 true
+
+You can also type 'stack [word1] [word2]' to see if 2 words of equal length can be stacked 
+so that the vertical columns are also words.
+
+'stack [length]' prints out all of the pairs of words of the specified length that can be stacked.
+This returns much more than you would think.
