@@ -92,8 +92,7 @@ tiles = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
 
 words = createDict()
 while True:
-    print("Check: ")
-    lets = input()
+    lets = raw_input("Check\n")
     if(lets[0:5]=="bingo"): #check all combinations for bingo
         print(bingoCheck(lets[6:], words))
     elif(lets[0:5]=="stack"):
